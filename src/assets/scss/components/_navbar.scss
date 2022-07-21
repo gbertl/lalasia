@@ -1,7 +1,7 @@
 .navbar {
   --bs-navbar-toggler-icon-bg: url(../../images/icons/menu.svg);
   --bs-navbar-toggler-focus-width: 0;
-  --bs-navbar-padding-y: 20px;
+  --bs-navbar-padding-y: #{map-get($spacers, 3)};
 
   border-bottom: 1px solid #f3f3f3;
 
