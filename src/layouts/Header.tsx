@@ -15,14 +15,14 @@ const Header = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="mt-4 mt-md-0">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto mb-2 mb-md-0">
             <Nav.Link href="#home">Product</Nav.Link>
             <Nav.Link href="#link">Services</Nav.Link>
             <Nav.Link href="#link">Article</Nav.Link>
             <Nav.Link href="#link">About Us</Nav.Link>
           </Nav>
 
-          <Nav className="ms-auto flex-row gap-3 mt-2 mt-md-0">
+          <Nav className="ms-auto flex-row gap-3">
             <Nav.Link>
               <img src={bag} alt="" />
             </Nav.Link>
