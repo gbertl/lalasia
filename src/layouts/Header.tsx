@@ -1,6 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
 
 import logo from '../assets/images/icons/logo.svg';
 import bag from '../assets/images/icons/bag.svg';
@@ -11,7 +12,7 @@ const Header = () => {
     <Navbar expand="md">
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="" />
+          <Image src={logo} fluid className="w-md-auto" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="mt-4 mt-md-0">
@@ -24,10 +25,10 @@ const Header = () => {
 
           <Nav className="ms-auto flex-row gap-3">
             <Nav.Link>
-              <img src={bag} alt="" />
+              <Image src={bag} />
             </Nav.Link>
             <Nav.Link>
-              <img src={user} alt="" />
+              <Image src={user} />
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

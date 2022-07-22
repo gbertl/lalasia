@@ -1,0 +1,36 @@
+@use '../../assets/scss/main' as *;
+
+.hero {
+  &__title {
+    font-size: 26px;
+
+    @include media-breakpoint-up(md) {
+      font-size: 64px;
+    }
+  }
+
+  &__text-wrapper {
+    max-width: 724px;
+    margin-inline: auto;
+
+    @include media-breakpoint-up(md) {
+      transform: translateY(10%);
+    }
+  }
+
+  &__arrow-down {
+    left: -5%;
+
+    @include media-breakpoint-up(lg) {
+      left: -20%;
+    }
+  }
+
+  &__stars {
+    right: 5%;
+
+    @include media-breakpoint-up(md) {
+      right: 2%;
+    }
+  }
+}

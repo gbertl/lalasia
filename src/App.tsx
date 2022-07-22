@@ -1,10 +1,11 @@
+import Hero from './components/Hero';
 import Layout from './layouts/Layout';
 
 const App = () => {
   return (
-    <>
-      <Layout>This is a page</Layout>
-    </>
+    <Layout>
+      <Hero />
+    </Layout>
   );
 };
 
