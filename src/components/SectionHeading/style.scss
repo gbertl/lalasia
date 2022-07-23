@@ -1,0 +1,18 @@
+@use '../../assets/scss/main' as *;
+
+.section-heading {
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(2, 40%);
+    grid-template-rows: repeat(2, max-content);
+  }
+
+  h3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+}

@@ -16,24 +16,21 @@ import showcaseDesktop from '../../assets/images/hero/showcase-desktop.jpg';
 
 const Hero = () => {
   return (
-    <section className="hero text-center mb-8 mb-md-10">
+    <section className="hero text-center section-margin">
       <Container>
-        <div className="mt-5 mt-md-6 mb-4 mb-md-0 position-relative hero__text-wrapper">
+        <div className="mt-5 mt-md-2 mt-lg-6 mb-4 mb-lg-0 position-relative hero__text-wrapper">
           <picture>
-            <source media="(min-width: 768px)" srcSet={arrowDownDesktop} />
+            <source media="(min-width: 992px)" srcSet={arrowDownDesktop} />
             <Image
               src={arrowDown}
-              className="position-absolute top-10 top-md-30 hero__arrow-down"
+              className="position-absolute top-10 top-lg-30 hero__arrow-down"
             />
           </picture>
-          <h1 className="hero__title position-relative">
+          <h1 className="hero__title">
             Discover Furniture With High Quality Wood
             <picture>
-              <source media="(min-width: 768px)" srcSet={starsDesktop} />
-              <Image
-                src={stars}
-                className="position-absolute top-50 hero__stars"
-              />
+              <source media="(min-width: 992px)" srcSet={starsDesktop} />
+              <Image src={stars} className="hero__stars" />
             </picture>
           </h1>
           <p className="mt-4">
@@ -42,11 +39,11 @@ const Hero = () => {
             viverra nunc, tortor sit laoreet. Quam tincidunt aliquam adipiscing
             tempor.
           </p>
-          <InputGroup className="mt-5 bg-white">
+          <InputGroup className="mt-5 bg-white hero__search-input">
             <InputGroup.Text className="bg-white border-0 px-3 px-4 py-2">
               <picture>
                 <source
-                  media="(min-width: 768px)"
+                  media="(min-width: 992px)"
                   srcSet={searchIconDesktop}
                 ></source>
                 <Image src={searchIcon} />
@@ -56,11 +53,11 @@ const Hero = () => {
               placeholder="Search property"
               aria-label="Search property"
               aria-describedby="basic-addon2"
-              className="border-0 ps-0 shadow-none"
+              className="border-0 ps-0 shadow-none bg-transparent"
             />
             <Button
               variant="primary"
-              className="hero__search-btn my-2 me-2 my-md-3 me-md-3"
+              className="hero__search-btn my-2 me-2 my-lg-3 me-lg-3"
               id="button-addon2"
             >
               Search

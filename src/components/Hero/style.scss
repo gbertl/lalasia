@@ -4,16 +4,21 @@
   &__title {
     font-size: 26px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       font-size: 64px;
     }
   }
 
   &__text-wrapper {
-    max-width: 724px;
+    max-width: 500px;
     margin-inline: auto;
 
     @include media-breakpoint-up(md) {
+      transform: translateY(19%);
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-width: 724px;
       transform: translateY(10%);
     }
   }
@@ -27,10 +32,14 @@
   }
 
   &__stars {
-    right: 5%;
+    transform: translateY(-45%);
 
-    @include media-breakpoint-up(md) {
-      right: 2%;
+    @include media-breakpoint-up(lg) {
+      transform: translateY(-60%);
     }
+  }
+
+  &__search-input {
+    box-shadow: 0px 4px 80px rgba(175, 173, 181, 0.2);
   }
 }

@@ -1,0 +1,14 @@
+@use '../../assets/scss/main' as *;
+
+.benifits {
+  .card.benifits__card {
+    --bs-card-border-width: 0;
+    box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+
+    @include media-breakpoint-up(lg) {
+      --bs-card-title-spacer-y: #{map-get($spacers, 3)};
+      --bs-card-spacer-y: #{map-get($spacers, 4)};
+      --bs-card-spacer-x: var(--bs-card-spacer-y);
+    }
+  }
+}

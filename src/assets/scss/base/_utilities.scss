@@ -1,0 +1,7 @@
+.section-margin {
+  margin-bottom: map-get($spacers, 8);
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: map-get($spacers, 10);
+  }
+}
