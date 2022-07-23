@@ -1,0 +1,38 @@
+.btn {
+  @include media-breakpoint-up(lg) {
+    padding: $spacer * 0.75 map-get($spacers, 5);
+  }
+
+  &-primary {
+    --bs-btn-color: #{$white};
+    --bs-btn-hover-color: var(--bs-btn-color);
+  }
+}
+
+.container {
+  --bs-gutter-x: #{map-get($spacers, 5)};
+}
+
+.form-control {
+  font-size: var(--bs-body-font-size);
+}
+
+.nav {
+  &-link {
+    --bs-nav-link-color: #151411;
+  }
+}
+
+.navbar {
+  --bs-navbar-toggler-icon-bg: url(../../images/icons/menu.svg);
+
+  border-bottom: 1px solid #f3f3f3;
+
+  &-toggler {
+    --bs-border-width: 0;
+  }
+
+  &-brand > img {
+    width: 85%;
+  }
+}
