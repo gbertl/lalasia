@@ -11,8 +11,8 @@ import stars from '../../assets/images/hero/stars-plus-wink-filled.png';
 import starsDesktop from '../../assets/images/hero/stars-plus-wink-filled-desktop.png';
 import searchIcon from '../../assets/images/icons/search.svg';
 import searchIconDesktop from '../../assets/images/icons/search-desktop.svg';
-import showcase from '../../assets/images/hero/showcase.png';
-import showcaseDesktop from '../../assets/images/hero/showcase-desktop.png';
+import showcase from '../../assets/images/hero/showcase.jpg';
+import showcaseDesktop from '../../assets/images/hero/showcase-desktop.jpg';
 
 const Hero = () => {
   return (
