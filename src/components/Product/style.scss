@@ -1,0 +1,52 @@
+@use '../../assets/scss/main' as *;
+
+.product {
+  &__slide {
+    max-width: 220px;
+
+    @include media-breakpoint-up(lg) {
+      max-width: 354px;
+    }
+  }
+
+  .card {
+    --bs-card-border-width: 0;
+    --bs-card-bg: none;
+    --bs-card-spacer-x: 0;
+
+    @include media-breakpoint-up(lg) {
+      --bs-card-spacer-y: #{map-get($spacers, 4)};
+    }
+  }
+
+  .swiper {
+    position: relative;
+  }
+
+  .btn {
+    --bs-btn-border-radius: 50%;
+    --bs-btn-bg: rgba(21, 20, 17, 0.6);
+    --bs-btn-padding-x: #{map-get($spacers, 3)};
+    --bs-btn-padding-y: var(--bs-btn-padding-x);
+    --bs-btn-border-width: 0;
+    --bs-btn-hover-bg: rgba(21, 20, 17, 1);
+    width: 52px;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  &__prev {
+    left: 5%;
+  }
+
+  &__next {
+    right: 5%;
+  }
+}

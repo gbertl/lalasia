@@ -1,6 +1,7 @@
 .btn {
   @include media-breakpoint-up(lg) {
-    padding: $spacer * 0.75 map-get($spacers, 5);
+    --bs-btn-padding-x: #{map-get($spacers, 5)};
+    --bs-btn-padding-y: #{$spacer * 0.75};
   }
 
   &-primary {

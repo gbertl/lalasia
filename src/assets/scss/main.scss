@@ -3,12 +3,15 @@
 @import './abstracts/variables';
 
 @import '~bootstrap/scss/variables';
+
+@import './abstracts/variable-overrides';
+
 @import '~bootstrap/scss/maps';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/root';
 @import '~bootstrap/scss/utilities';
 
-@import './abstracts/utility_overrides';
+@import './abstracts/utility-overrides';
 
 @import '~bootstrap/scss/reboot';
 @import '~bootstrap/scss/type';

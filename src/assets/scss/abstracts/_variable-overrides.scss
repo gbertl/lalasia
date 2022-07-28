@@ -1,0 +1,6 @@
+$font-sizes: map-merge(
+  $font-sizes,
+  (
+    small: $small-font-size,
+  )
+);
