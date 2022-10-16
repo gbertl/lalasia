@@ -2,6 +2,7 @@ import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 import SectionHeading from '../SectionHeading';
 import showcase1 from '../../assets/images/showcase/showcase-1.jpg';
@@ -30,7 +31,7 @@ const Showcase = () => {
                 Learn More
               </Button>
             </div>
-            <img
+            <Image
               src={showcaseDesktop1}
               alt=""
               className="showcase__img d-none d-lg-block"
@@ -52,14 +53,14 @@ const Showcase = () => {
                   <span className="text-muted">Project Finished</span>
                 </li>
               </ul>
-              <img
+              <Image
                 src={showcase1}
                 alt=""
                 className="mb-4 showcase__img order-lg-1 d-lg-none"
               />
               <picture className="order-lg-3">
                 <source media="(min-width: 992px)" srcSet={showcaseDesktop2} />
-                <img src={showcase2} alt="" className="showcase__img" />
+                <Image src={showcase2} alt="" className="showcase__img" />
               </picture>
             </div>
           </Col>
