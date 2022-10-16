@@ -6,6 +6,7 @@ interface Props {
   bodyText: string;
   centered?: boolean;
   between?: boolean;
+  withContainerPadding?: boolean;
 }
 
 const SectionHeading = ({
@@ -14,11 +15,13 @@ const SectionHeading = ({
   bodyText,
   centered,
   between,
+  withContainerPadding,
 }: Props) => {
   let sectionHeadingCls = 'section-heading mb-5 mb-xl-6';
   if (centered)
     sectionHeadingCls += ' text-center section-heading--centered mx-auto';
   if (between) sectionHeadingCls += ' d-lg-grid justify-content-lg-between';
+  if (withContainerPadding) sectionHeadingCls += ' container-gutter';
 
   let subheadingCls = 'w-75 w-md-auto h6 fs-lg-5 text-secondary';
   if (centered) subheadingCls += ' mx-auto';

@@ -10,10 +10,6 @@
   }
 }
 
-.container {
-  --bs-gutter-x: #{map-get($spacers, 5)};
-}
-
 .form-control {
   font-size: var(--bs-body-font-size);
 }

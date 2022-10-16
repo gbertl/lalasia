@@ -5,3 +5,8 @@
     margin-bottom: map-get($spacers, 10);
   }
 }
+
+.container-gutter {
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
+}

@@ -54,3 +54,5 @@ $navbar-padding-y: $spacer;
 $card-bg: 'none';
 $card-border-width: 0;
 $card-cap-bg: 'none';
+
+$container-padding-x: map-get($spacers, 4);

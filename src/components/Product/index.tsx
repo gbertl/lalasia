@@ -75,44 +75,41 @@ const Product = () => {
 
   return (
     <section className="product section-margin">
-      <Container fluid>
-        <SectionHeading
-          subheading="Product"
-          heading="Our popular product"
-          bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
-          centered
-        />
-        <Swiper
-          spaceBetween={isDesktop ? 29 : 20}
-          slidesPerView="auto"
-          loop={true}
-          centeredSlides={true}
-          navigation={true}
-          className="mb-10"
-        >
-          {products.map((product) => (
-            <SwiperSlide className="product__slide" key={product.title}>
-              <Card>
-                <Card.Img variant="top" src={product.image} />
-                <Card.Body>
-                  <h4 className="fs-small text-body mb-lg-3">
-                    {product.subheading}
-                  </h4>
-                  <Card.Title className="fs-lg-4">{product.title}</Card.Title>
-                  <Card.Text className="mb-lg-4">
-                    {product.description}
-                  </Card.Text>
-                  <span className="text-black fw-bold fs-6 fs-lg-5">
-                    ${product.price}
-                  </span>
-                </Card.Body>
-              </Card>
-            </SwiperSlide>
-          ))}
-          {isDesktop && <SwiperButtonPrev />}
-          {isDesktop && <SwiperButtonNext />}
-        </Swiper>
-      </Container>
+      <SectionHeading
+        subheading="Product"
+        heading="Our popular product"
+        bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
+        centered
+        withContainerPadding
+      />
+      <Swiper
+        spaceBetween={isDesktop ? 29 : 20}
+        slidesPerView="auto"
+        loop={true}
+        centeredSlides={true}
+        navigation={true}
+        className="mb-10"
+      >
+        {products.map((product) => (
+          <SwiperSlide className="product__slide" key={product.title}>
+            <Card>
+              <Card.Img variant="top" src={product.image} />
+              <Card.Body>
+                <h4 className="fs-small text-body mb-lg-3">
+                  {product.subheading}
+                </h4>
+                <Card.Title className="fs-lg-4">{product.title}</Card.Title>
+                <Card.Text className="mb-lg-4">{product.description}</Card.Text>
+                <span className="text-black fw-bold fs-6 fs-lg-5">
+                  ${product.price}
+                </span>
+              </Card.Body>
+            </Card>
+          </SwiperSlide>
+        ))}
+        {isDesktop && <SwiperButtonPrev />}
+        {isDesktop && <SwiperButtonNext />}
+      </Swiper>
     </section>
   );
 };
