@@ -15,7 +15,7 @@ const SectionHeading = ({
   centered,
   between,
 }: Props) => {
-  let sectionHeadingCls = 'section-heading mb-5 mb-lg-6';
+  let sectionHeadingCls = 'section-heading mb-5 mb-xl-6';
   if (centered)
     sectionHeadingCls += ' text-center section-heading--centered mx-auto';
   if (between) sectionHeadingCls += ' d-lg-grid justify-content-lg-between';

@@ -15,23 +15,29 @@ const Showcase = () => {
     <section className="showcase section-margin">
       <Container>
         <Row className="gx-5">
-          <Col xs={12} lg={6}>
-            <SectionHeading
-              subheading="Our Product"
-              heading="Crafted by talented and high quality material"
-              bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
-            />
-            <Button variant="primary" className="w-100 w-lg-auto mb-4 mb-lg-5">
-              Learn More
-            </Button>
+          <Col
+            xs={12}
+            lg={6}
+            className="d-flex flex-column justify-content-between align-items-start mb-4 mb-lg-0"
+          >
+            <div className="mb-4 mb-xl-0">
+              <SectionHeading
+                subheading="Our Product"
+                heading="Crafted by talented and high quality material"
+                bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
+              />
+              <Button variant="primary" className="w-100 w-lg-auto">
+                Learn More
+              </Button>
+            </div>
             <img
               src={showcaseDesktop1}
               alt=""
-              className="showcase__img showcase__img--desktop-1 d-none d-lg-block"
+              className="showcase__img d-none d-lg-block"
             />
           </Col>
           <Col xs={12} lg={6}>
-            <div className="d-flex flex-column h-100">
+            <div className="d-flex flex-column">
               <ul className="w-100 list-unstyled d-flex justify-content-between justify-content-lg-end gap-4 gap-lg-5 order-lg-2 mt-lg-4 mb-5 mb-lg-6">
                 <li className="d-flex flex-column">
                   <span className="fs-6 fs-lg-1 fw-bold text-black">20+</span>
