@@ -1,5 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import SectionHeading from '../SectionHeading';
 import showcase1 from '../../assets/images/showcase/showcase-1.jpg';
@@ -10,30 +12,51 @@ const Showcase = () => {
   return (
     <section className="showcase">
       <Container>
-        <SectionHeading
-          subheading="Our Product"
-          heading="Crafted by talented and high quality material"
-          bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
-        />
-        <Button variant="primary" className="w-100 mb-4">
-          Learn More
-        </Button>
-        <ul className="w-100 list-unstyled d-flex justify-content-between gap-4 mb-5">
-          <li>
-            <h6>20+</h6>
-            <span className="text-muted">Years Experience</span>
-          </li>
-          <li>
-            <h6>483</h6>
-            <span className="text-muted">Happy Client</span>
-          </li>
-          <li>
-            <h6>150+</h6>
-            <span className="text-muted">Project Finished</span>
-          </li>
-        </ul>
-        <img src={showcase1} alt="" className="mb-4 showcase__img" />
-        <img src={showcase2} alt="" className="showcase__img" />
+        <Row className="gx-5">
+          <Col xs={12} lg={6}>
+            <SectionHeading
+              subheading="Our Product"
+              heading="Crafted by talented and high quality material"
+              bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
+            />
+            <Button variant="primary" className="w-100 w-lg-auto mb-4 mb-lg-5">
+              Learn More
+            </Button>
+            <img
+              src={showcase1}
+              alt=""
+              className="showcase__img showcase__img--desktop-1 d-none d-lg-block"
+            />
+          </Col>
+          <Col xs={12} lg={6}>
+            <div className="d-flex flex-column h-100">
+              <ul className="w-100 list-unstyled d-flex justify-content-between justify-content-lg-end gap-4 gap-lg-5 order-lg-2 mt-lg-4 mb-5 mb-lg-6">
+                <li className="d-flex flex-column">
+                  <span className="fs-6 fs-lg-1 fw-bold text-black">20+</span>
+                  <span className="text-muted">Years Experience</span>
+                </li>
+                <li className="d-flex flex-column">
+                  <span className="fs-6 fs-lg-1 fw-bold text-black">483</span>
+                  <span className="text-muted">Happy Client</span>
+                </li>
+                <li className="d-flex flex-column">
+                  <span className="fs-6 fs-lg-1 fw-bold text-black">150+</span>
+                  <span className="text-muted">Project Finished</span>
+                </li>
+              </ul>
+              <img
+                src={showcase1}
+                alt=""
+                className="mb-4 showcase__img order-lg-1 d-lg-none"
+              />
+              <img
+                src={showcase2}
+                alt=""
+                className="showcase__img order-lg-3"
+              />
+            </div>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

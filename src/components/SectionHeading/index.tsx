@@ -5,19 +5,26 @@ interface Props {
   heading: string;
   bodyText: string;
   centered?: boolean;
+  between?: boolean;
 }
 
-const SectionHeading = ({ subheading, heading, bodyText, centered }: Props) => {
+const SectionHeading = ({
+  subheading,
+  heading,
+  bodyText,
+  centered,
+  between,
+}: Props) => {
   let sectionHeadingCls = 'section-heading mb-5 mb-lg-6';
   if (centered)
     sectionHeadingCls += ' text-center section-heading--centered mx-auto';
-  if (!centered) sectionHeadingCls += ' d-lg-grid justify-content-lg-between';
+  if (between) sectionHeadingCls += ' d-lg-grid justify-content-lg-between';
 
   let subheadingCls = 'w-75 w-md-auto h6 fs-lg-5 text-secondary';
   if (centered) subheadingCls += ' mx-auto';
 
   let headingCls = 'h4 fs-lg-1 mb-3';
-  if (!centered) headingCls += ' mb-lg-0';
+  if (between) headingCls += ' mb-lg-0';
 
   return (
     <div className={sectionHeadingCls}>

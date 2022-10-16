@@ -36,6 +36,7 @@ const Benifits = () => {
           subheading="Benifits"
           heading="Benefits when using our services"
           bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
+          between
         />
 
         <Row className="g-3 g-lg-4">
