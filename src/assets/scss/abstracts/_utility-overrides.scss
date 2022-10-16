@@ -43,5 +43,12 @@ $utilities: map-merge(
           responsive: true,
         )
       ),
+    'height':
+      map-merge(
+        map-get($utilities, 'height'),
+        (
+          responsive: true,
+        )
+      ),
   )
 );
