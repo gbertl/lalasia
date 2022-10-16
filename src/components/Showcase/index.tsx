@@ -6,6 +6,8 @@ import Col from 'react-bootstrap/Col';
 import SectionHeading from '../SectionHeading';
 import showcase1 from '../../assets/images/showcase/showcase-1.jpg';
 import showcase2 from '../../assets/images/showcase/showcase-2.jpg';
+import showcaseDesktop1 from '../../assets/images/showcase/showcase-desktop-1.jpg';
+import showcaseDesktop2 from '../../assets/images/showcase/showcase-desktop-2.jpg';
 import './style.scss';
 
 const Showcase = () => {
@@ -23,7 +25,7 @@ const Showcase = () => {
               Learn More
             </Button>
             <img
-              src={showcase1}
+              src={showcaseDesktop1}
               alt=""
               className="showcase__img showcase__img--desktop-1 d-none d-lg-block"
             />
@@ -49,11 +51,10 @@ const Showcase = () => {
                 alt=""
                 className="mb-4 showcase__img order-lg-1 d-lg-none"
               />
-              <img
-                src={showcase2}
-                alt=""
-                className="showcase__img order-lg-3"
-              />
+              <picture className="order-lg-3">
+                <source media="(min-width: 992px)" srcSet={showcaseDesktop2} />
+                <img src={showcase2} alt="" className="showcase__img" />
+              </picture>
             </div>
           </Col>
         </Row>
