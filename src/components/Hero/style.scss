@@ -33,6 +33,7 @@
 
   &__stars {
     transform: translateY(-45%);
+    display: inline-block;
 
     @include media-breakpoint-up(lg) {
       transform: translateY(-60%);
