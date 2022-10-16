@@ -91,7 +91,7 @@ const Product = () => {
           className="mb-10"
         >
           {products.map((product) => (
-            <SwiperSlide className="product__slide">
+            <SwiperSlide className="product__slide" key={product.title}>
               <Card>
                 <Card.Img variant="top" src={product.image} />
                 <Card.Body>
