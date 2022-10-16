@@ -10,8 +10,6 @@
   }
 
   .card {
-    --bs-card-border-width: 0;
-    --bs-card-bg: none;
     --bs-card-spacer-x: 0;
 
     @include media-breakpoint-up(lg) {
