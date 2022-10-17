@@ -45,13 +45,14 @@ const Testimonials = () => {
 
   return (
     <section className="testimonials section-margin">
-      <SectionHeading
-        subheading="Testimonials"
-        heading="What our customer say"
-        bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
-        centered
-        withContainerPadding
-      />
+      <Container>
+        <SectionHeading
+          subheading="Testimonials"
+          heading="What our customer say"
+          bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
+          centered
+        />
+      </Container>
 
       <Swiper
         slidesPerView="auto"

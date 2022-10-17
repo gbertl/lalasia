@@ -75,13 +75,14 @@ const Product = () => {
 
   return (
     <section className="product section-margin">
-      <SectionHeading
-        subheading="Product"
-        heading="Our popular product"
-        bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
-        centered
-        withContainerPadding
-      />
+      <Container>
+        <SectionHeading
+          subheading="Product"
+          heading="Our popular product"
+          bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
+          centered
+        />
+      </Container>
       <Swiper
         spaceBetween={isDesktop ? 29 : 20}
         slidesPerView="auto"

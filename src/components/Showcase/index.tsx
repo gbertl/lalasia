@@ -15,7 +15,7 @@ const Showcase = () => {
   return (
     <section className="showcase section-margin">
       <Container>
-        <Row className="gx-5">
+        <Row className="gx-lg-5">
           <Col
             xs={12}
             lg={6}
