@@ -1,0 +1,24 @@
+@use '../../assets/scss/main.scss' as *;
+
+.articles {
+  &__card-overlay {
+    top: auto !important;
+  }
+
+  &__card-footer {
+    --bs-card-cap-padding-x: 0;
+  }
+
+  &__horizontal-card {
+    grid-template-columns: 35% 1fr;
+    gap: map-get($spacers, 3);
+  }
+
+  &__horizontal-card-img {
+    object-fit: cover;
+  }
+
+  &__author-avatar {
+    width: 18px;
+  }
+}

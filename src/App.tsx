@@ -1,3 +1,4 @@
+import Articles from './components/Articles';
 import Benifits from './components/Benifits';
 import Hero from './components/Hero';
 import Product from './components/Product';
@@ -13,6 +14,7 @@ const App = () => {
       <Product />
       <Showcase />
       <Testimonials />
+      <Articles />
     </Layout>
   );
 };
