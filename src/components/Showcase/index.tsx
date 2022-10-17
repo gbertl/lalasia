@@ -10,6 +10,7 @@ import showcase2 from '../../assets/images/showcase/showcase-2.jpg';
 import showcaseDesktop1 from '../../assets/images/showcase/showcase-desktop-1.jpg';
 import showcaseDesktop2 from '../../assets/images/showcase/showcase-desktop-2.jpg';
 import './style.scss';
+import PrimaryBlock from '../Buttons/PrimaryBlock';
 
 const Showcase = () => {
   return (
@@ -27,9 +28,7 @@ const Showcase = () => {
                 heading="Crafted by talented and high quality material"
                 bodyText="Pellentesque etiam blandit in tincidunt at donec. Eget ipsum dignissim placerat nisi, adipiscing mauris non purus parturient."
               />
-              <Button variant="primary" className="w-100 w-lg-auto">
-                Learn More
-              </Button>
+              <PrimaryBlock className="w-lg-auto">Learn More</PrimaryBlock>
             </div>
             <Image
               src={showcaseDesktop1}
