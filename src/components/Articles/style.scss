@@ -7,11 +7,20 @@
 
   &__card-footer {
     --bs-card-cap-padding-x: 0;
+    font-size: 12px;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 14px;
+    }
   }
 
   &__horizontal-card {
-    grid-template-columns: 35% 1fr;
+    grid-template-columns: 35% 65%;
     gap: map-get($spacers, 3);
+
+    @include media-breakpoint-up(lg) {
+      grid-template-columns: 40% 60%;
+    }
   }
 
   &__horizontal-card-img {
@@ -20,5 +29,9 @@
 
   &__author-avatar {
     width: 18px;
+
+    @include media-breakpoint-up(lg) {
+      width: 28px;
+    }
   }
 }
