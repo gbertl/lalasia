@@ -1,6 +1,7 @@
 import Articles from './components/Articles';
 import Benifits from './components/Benifits';
 import Cta from './components/Cta';
+import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Product from './components/Product';
 import Showcase from './components/Showcase';
@@ -17,6 +18,7 @@ const App = () => {
       <Testimonials />
       <Articles />
       <Cta />
+      <Footer />
     </Layout>
   );
 };
