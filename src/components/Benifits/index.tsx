@@ -46,7 +46,7 @@ const Benifits = () => {
                 <Card.Body>
                   <Image
                     src={benifit.icon}
-                    className="bg-body rounded-circle mb-3 mb-lg-4 p-2 p-lg-3"
+                    className="rounded-circle mb-3 mb-lg-4 p-2 p-lg-3"
                   />
                   <Card.Title as="h6" className="fs-lg-5">
                     {benifit.title}

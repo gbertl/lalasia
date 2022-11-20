@@ -4,11 +4,29 @@
   .card.benifits__card {
     --bs-card-border-width: 0;
     box-shadow: 0px 4px 100px rgba(175, 173, 181, 0.1);
+    transition: $transition-base;
+
+    &:hover {
+      box-shadow: 0px 4px 100px rgba(175, 173, 181, 2);
+      transform: translateY(-5px);
+    }
+
+    h6 {
+      transition: $transition-base;
+    }
+
+    &:hover h6 {
+      color: $primary;
+    }
 
     @include media-breakpoint-up(lg) {
       --bs-card-title-spacer-y: #{map-get($spacers, 3)};
       --bs-card-spacer-y: #{map-get($spacers, 4)};
       --bs-card-spacer-x: var(--bs-card-spacer-y);
     }
+  }
+
+  .card-body img {
+    background: #f9f9f9;
   }
 }
