@@ -30,11 +30,13 @@ const Showcase = () => {
               />
               <PrimaryBlock className="w-lg-auto">Learn More</PrimaryBlock>
             </div>
-            <Image
-              src={showcaseDesktop1}
-              alt=""
-              className="showcase__img d-none d-lg-block"
-            />
+            <div className="showcase__img-wrapper">
+              <Image
+                src={showcaseDesktop1}
+                alt=""
+                className="showcase__img d-none d-lg-block"
+              />
+            </div>
           </Col>
           <Col xs={12} lg={6}>
             <div className="d-flex flex-column">
@@ -57,7 +59,7 @@ const Showcase = () => {
                 alt=""
                 className="mb-4 showcase__img order-lg-1 d-lg-none"
               />
-              <picture className="order-lg-3">
+              <picture className="order-lg-3 showcase__img-wrapper">
                 <source media="(min-width: 992px)" srcSet={showcaseDesktop2} />
                 <Image src={showcase2} alt="" className="showcase__img" />
               </picture>
