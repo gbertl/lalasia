@@ -55,3 +55,5 @@ $card-border-width: 0;
 $card-cap-bg: 'none';
 
 $container-padding-x: map-get($spacers, 5);
+
+$transition-base: all 0.3s ease-in-out !default;
