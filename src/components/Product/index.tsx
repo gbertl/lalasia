@@ -89,6 +89,7 @@ const Product = () => {
         loop={true}
         centeredSlides={true}
         navigation={true}
+        speed={500}
         className="mb-10"
       >
         {products.map((product) => (

@@ -59,8 +59,9 @@ const Testimonials = () => {
         spaceBetween={isDesktop ? 30 : 20}
         centeredSlides={true}
         loop={true}
+        speed={500}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: true,
         }}
         modules={[Autoplay]}
