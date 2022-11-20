@@ -1,0 +1,7 @@
+@use '../../assets/scss/main.scss' as *;
+
+.navbar {
+  .badge {
+    top: $navbar-nav-link-padding-x;
+  }
+}
