@@ -43,7 +43,7 @@ const Footer = () => {
           <div className="d-flex justify-content-between gap-lg-8">
             {sitemap.map((map) => (
               <div>
-                <h6 className="mb-3 mb-lg-4 fs-lg-5">{map.title}</h6>
+                <h6 className="mb-3 mb-lg-4">{map.title}</h6>
                 <ul className="list-unstyled d-flex flex-column gap-2 gap-lg-3">
                   {map.links.map((link) => (
                     <li>

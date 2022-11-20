@@ -1,11 +1,13 @@
 @use '../../assets/scss/main.scss' as *;
 
 .footer {
+  font-size: $font-size-sm;
+
   &__logo {
     width: 99px;
 
     @include media-breakpoint-up(lg) {
-      width: 130px;
+      width: 110px;
     }
   }
 }
