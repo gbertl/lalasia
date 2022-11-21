@@ -25,6 +25,10 @@
 
   border-bottom: 1px solid #f3f3f3;
 
+  @include media-breakpoint-up(md) {
+    --bs-navbar-padding-y: #{map-get($spacers, 4)};
+  }
+
   &-toggler {
     --bs-border-width: 0;
   }
