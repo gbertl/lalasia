@@ -11,6 +11,7 @@ import bag from '../../assets/images/icons/bag.svg';
 import user from '../../assets/images/icons/user.svg';
 
 import './style.scss';
+import { Dropdown } from 'react-bootstrap';
 
 const Header = () => {
   return (
@@ -40,9 +41,18 @@ const Header = () => {
                 </Badge>
               </Nav.Link>
             </OverlayTrigger>
-            <Nav.Link>
-              <Image src={user} />
-            </Nav.Link>
+            <Dropdown>
+              <Dropdown.Toggle as={Nav.Link}>
+                <Image src={user} />
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item>Messages</Dropdown.Item>
+                <Dropdown.Divider />
+                <Dropdown.Item>Account</Dropdown.Item>
+                <Dropdown.Item>Logout</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
           </Nav>
         </Navbar.Collapse>
       </Container>
