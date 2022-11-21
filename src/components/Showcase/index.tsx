@@ -54,11 +54,13 @@ const Showcase = () => {
                   <span className="text-muted">Project Finished</span>
                 </li>
               </ul>
-              <Image
-                src={showcase1}
-                alt=""
-                className="mb-4 showcase__img order-lg-1 d-lg-none"
-              />
+              <div className="showcase__img-wrapper">
+                <Image
+                  src={showcase1}
+                  alt=""
+                  className="mb-4 showcase__img order-lg-1 d-lg-none"
+                />
+              </div>
               <picture className="order-lg-3 showcase__img-wrapper">
                 <source media="(min-width: 992px)" srcSet={showcaseDesktop2} />
                 <Image src={showcase2} alt="" className="showcase__img" />
